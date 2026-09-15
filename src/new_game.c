@@ -216,6 +216,10 @@ void NewGameInitData(void)
         RunScriptImmediately(EventScript_ResetAllMapFlagsFrlg);
     else
         RunScriptImmediately(EventScript_ResetAllMapFlags);
+
+    // Pokémon Aevum progression defaults
+    FlagSet(FLAG_AEVUM_EXP_SHARE);
+    VarSet(VAR_AEVUM_LEVEL_CAP, 15);
 #if IS_FRLG
         StringCopy(gSaveBlock1Ptr->rivalName, rivalName);
 #endif
