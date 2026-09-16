@@ -485,6 +485,9 @@ void HandleAction_UseMove(void)
         return;
     }
 
+    // Aevum: Rage remains active only until the user's next move action.
+    gBattleMons[gBattlerAttacker].volatiles.rage = FALSE;
+
     gCurrMovePos = gChosenMovePos = gBattleStruct->chosenMovePositions[gBattlerAttacker];
 
     // choose move
