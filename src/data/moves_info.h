@@ -3593,7 +3593,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Constricts to inflict pain.\n"
             "May lower Speed."),
         .effect = EFFECT_HIT,
-        .power = 10,
+        .power = 40,
         .type = TYPE_NORMAL,
         .accuracy = 100,
         .pp = 35,
@@ -3604,7 +3604,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_STAT_MINUS,
             .speed = 1,
-            .chance = B_UPDATED_MOVE_DATA >= GEN_2 ? 10 : 33,
+            .chance = 30,
         }),
         .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_WORSEN_CONDITION_OF_PREV_MONS : CONTEST_EFFECT_STARTLE_PREV_MON,
         .contestCategory = CONTEST_CATEGORY_TOUGH,
@@ -5633,9 +5633,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "An attack lasting 5 turns\n"
             "with rising intensity."),
         .effect = EFFECT_ROLLOUT,
-        .power = 30,
+        .power = 35,
         .type = TYPE_ROCK,
-        .accuracy = 90,
+        .accuracy = 95,
         .pp = 20,
         .target = TARGET_SELECTED,
         .priority = 0,
@@ -5762,13 +5762,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "An attack that intensifies\n"
             "on each successive hit."),
-    #if B_UPDATED_MOVE_DATA >= GEN_6
-        .power = 40,
-    #elif B_UPDATED_MOVE_DATA == GEN_5
         .power = 20,
-    #else
-        .power = 10,
-    #endif
         .effect = EFFECT_FURY_CUTTER,
         .type = TYPE_BUG,
         .accuracy = 95,
