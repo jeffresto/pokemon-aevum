@@ -1699,13 +1699,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Hyper Beam"),
         .description = COMPOUND_STRING(
-        #if B_SKIP_RECHARGE != GEN_1
-            "Powerful, but leaves the\n"
-            "user immobile the next turn."),
-        #else
-            "Leaves the user immobile if\n"
-            "it doesn't KO the target."),
-        #endif
+            "Uses the stronger offense;\n"
+            "user must recharge next turn."),
         .effect = EFFECT_HIT,
         .power = 150,
         .type = TYPE_NORMAL,

@@ -9101,6 +9101,14 @@ void SetDynamicMoveCategory(enum BattlerId battlerAtk, enum BattlerId battlerDef
 {
     gBattleStruct->dynamicMoveCategory = DAMAGE_CATEGORY_NONE;
 
+    // Aevum: Hyper Beam uses whichever attacking stat is currently higher.
+    // Ties favor Special.
+    if (move == MOVE_HYPER_BEAM)
+    {
+        gBattleStruct->dynamicMoveCategory = GetCategoryBasedOnStats(battlerAtk);
+        return;
+    }
+
     switch (GetMoveEffect(move))
     {
     case EFFECT_PHOTON_GEYSER:
