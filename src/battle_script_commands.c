@@ -6994,6 +6994,12 @@ static void Cmd_settorment(void)
     else
     {
         gBattleMons[gBattlerTarget].volatiles.torment = TRUE;
+
+        // Aevum: Torment also lowers Attack and Sp. Atk once
+        // when the effect is successfully applied.
+        SetStatChange(gBattlerTarget, STAT_ATK, -1);
+        SetStatChange(gBattlerTarget, STAT_SPATK, -1);
+
         gBattlescriptCurrInstr = cmd->nextInstr;
     }
 }

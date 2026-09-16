@@ -9996,6 +9996,15 @@ bool32 DoesDestinyBondFail(enum BattlerId battler)
 // This check has always to be the last in a condtion statement because of the recording of AI data.
 bool32 IsMoveEffectBlockedByTarget(enum Ability ability)
 {
+    // Aevum: Lucky Chant blocks secondary effects from
+    // damaging attacks used by an opponent.
+    if ((gSideStatuses[GetBattlerSide(gBattlerTarget)] & SIDE_STATUS_LUCKY_CHANT)
+     && !IsBattleMoveStatus(gCurrentMove)
+     && !IsBattlerAlly(gBattlerAttacker, gBattlerTarget))
+    {
+        return TRUE;
+    }
+
     if (ability == ABILITY_SHIELD_DUST)
     {
         RecordAbilityBattle(gBattlerTarget, ability);
