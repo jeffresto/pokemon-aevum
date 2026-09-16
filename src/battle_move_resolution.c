@@ -1161,7 +1161,7 @@ static enum CancelerResult CancelerBide(struct BattleCalcValues *cv)
         gBattleMons[gBattlerAttacker].volatiles.multipleTurns = TRUE;
         gLockedMoves[gBattlerAttacker] = gCurrentMove;
         gBideDmg[gBattlerAttacker] = 0;
-        gBattleMons[gBattlerAttacker].volatiles.bideTurns = 2;
+        gBattleMons[gBattlerAttacker].volatiles.bideTurns = 1;
         gBattlescriptCurrInstr = BattleScript_SetUpBide;
         return CANCELER_RESULT_RUN_SCRIPT_AND_INCREMENT; // Jump to moveend
     }
