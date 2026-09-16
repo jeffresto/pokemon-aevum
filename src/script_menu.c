@@ -730,59 +730,62 @@ bool16 ScriptMenu_CreatePCMultichoice(void)
     }
 }
 
+static const u8 sText_AevumPokemonStorage[] = _("POKéMON STORAGE");
+static const u8 sText_AevumMoveManagement[] = _("MOVE MANAGEMENT");
+static const u8 sText_AevumRelearn[] = _("RELEARN");
+static const u8 sText_AevumForget[] = _("FORGET");
+static const u8 sText_AevumCancel[] = _("CANCEL");
+
+static const u8 *const sAevumPCMenuStrings[] =
+{
+    sText_AevumPokemonStorage,
+    sText_AevumMoveManagement,
+    gText_LogOff,
+};
+
+static const u8 *const sAevumMoveManagementStrings[] =
+{
+    sText_AevumRelearn,
+    sText_AevumForget,
+    sText_AevumCancel,
+};
+
 static void CreatePCMultichoice(void)
 {
     u8 x = 8;
     u32 pixelWidth = 0;
     u8 width;
-    u8 numChoices;
     u8 windowId;
-    int i;
+    const u8 *const *choices;
+    const u8 numChoices = 3;
 
-    for (i = 0; i < ARRAY_COUNT(sPCNameStrings); i++)
-    {
-        pixelWidth = DisplayTextAndGetWidth(sPCNameStrings[i], pixelWidth);
-    }
+    // Aevum: VAR_0x8006 selects the main PC menu or Move Management.
+    if (gSpecialVar_0x8006 == 1)
+        choices = sAevumMoveManagementStrings;
+    else
+        choices = sAevumPCMenuStrings;
 
-    if (FlagGet(FLAG_SYS_GAME_CLEAR))
-    {
-        pixelWidth = DisplayTextAndGetWidth(gText_HallOfFame, pixelWidth);
-    }
+    for (u32 i = 0; i < numChoices; i++)
+        pixelWidth = DisplayTextAndGetWidth(choices[i], pixelWidth);
 
     width = ConvertPixelWidthToTileWidth(pixelWidth);
 
-    // Include Hall of Fame option if player is champion
-    if (FlagGet(FLAG_SYS_GAME_CLEAR))
+    windowId = CreateWindowFromRect(0, 0, width, 6);
+    SetStandardWindowBorderStyle(windowId, FALSE);
+
+    for (u32 i = 0; i < numChoices; i++)
     {
-        numChoices = 4;
-        windowId = CreateWindowFromRect(0, 0, width, 8);
-        SetStandardWindowBorderStyle(windowId, FALSE);
-        AddTextPrinterParameterized(windowId, FONT_NORMAL, gText_HallOfFame, x, 33, TEXT_SKIP_DRAW, NULL);
-        AddTextPrinterParameterized(windowId, FONT_NORMAL, gText_LogOff, x, 49, TEXT_SKIP_DRAW, NULL);
-    }
-    else
-    {
-        numChoices = 3;
-        windowId = CreateWindowFromRect(0, 0, width, 6);
-        SetStandardWindowBorderStyle(windowId, FALSE);
-        AddTextPrinterParameterized(windowId, FONT_NORMAL, gText_LogOff, x, 33, TEXT_SKIP_DRAW, NULL);
+        AddTextPrinterParameterized(
+            windowId,
+            FONT_NORMAL,
+            choices[i],
+            x,
+            1 + (i * 16),
+            TEXT_SKIP_DRAW,
+            NULL
+        );
     }
 
-    // Change PC name if player has met Lanette
-    if (FlagGet(FLAG_SYS_PC_LANETTE))
-    {
-        if (IS_FRLG)
-            AddTextPrinterParameterized(windowId, FONT_NORMAL, gText_BillsPc, x, 1, TEXT_SKIP_DRAW, NULL);
-        else
-            AddTextPrinterParameterized(windowId, FONT_NORMAL, gText_LanettesPC, x, 1, TEXT_SKIP_DRAW, NULL);
-    }
-    else
-    {
-        AddTextPrinterParameterized(windowId, FONT_NORMAL, gText_SomeonesPC, x, 1, TEXT_SKIP_DRAW, NULL);
-    }
-
-    StringExpandPlaceholders(gStringVar4, gText_PlayersPC);
-    PrintPlayerNameOnWindow(windowId, gStringVar4, x, 17);
     InitMenuInUpperLeftCornerNormal(windowId, numChoices, 0);
     CopyWindowToVram(windowId, COPYWIN_FULL);
     InitMultichoiceCheckWrap(FALSE, numChoices, windowId, MULTI_PC);
