@@ -411,12 +411,13 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Cut"),
         .description = COMPOUND_STRING(
-            "Cuts the foe with sharp\n"
-            "scythes, claws, etc."),
+            "Cuts with sharp claws, etc.\n"
+            "High critical-hit ratio."),
         .effect = EFFECT_HIT,
-        .power = 50,
+        .power = 60,
         .type = TYPE_NORMAL,
-        .accuracy = 95,
+        .accuracy = 100,
+        .criticalHitStage = 1,
         .pp = 30,
         .target = TARGET_SELECTED,
         .priority = 0,
@@ -1046,8 +1047,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Tail Whip"),
         .description = COMPOUND_STRING(
-            "Wags the tail to lower the\n"
-            "foes' Defense."),
+            "Wags its tail to lower the\n"
+            "foes' Defense and Sp. Def."),
         .effect = EFFECT_STAT_CHANGE,
         .power = 0,
         .type = TYPE_NORMAL,
@@ -1065,6 +1066,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = STAT_CHANGE_EFFECT_MINUS,
             .defense = 1,
+            .spDef = 1,
         }),
         .battleAnimScript = gBattleAnimMove_TailWhip,
     },
@@ -1148,8 +1150,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Leer"),
         .description = COMPOUND_STRING(
-            "Frightens the foes with a\n"
-            "leer to lower Defense."),
+            "Frightens foes to lower\n"
+            "Defense and Speed."),
         .effect = EFFECT_STAT_CHANGE,
         .power = 0,
         .type = TYPE_NORMAL,
@@ -1167,6 +1169,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = STAT_CHANGE_EFFECT_MINUS,
             .defense = 1,
+            .speed = 1,
         }),
         .battleAnimScript = gBattleAnimMove_Leer,
     },
@@ -1203,8 +1206,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Growl"),
         .description = COMPOUND_STRING(
-            "Growls cutely to lower the\n"
-            "foes' Attack."),
+            "Lowers the foes' Attack\n"
+            "and Sp. Atk."),
         .effect = EFFECT_STAT_CHANGE,
         .power = 0,
         .type = TYPE_NORMAL,
@@ -1224,6 +1227,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = STAT_CHANGE_EFFECT_MINUS,
             .attack = 1,
+            .spAtk = 1,
         }),
         .battleAnimScript = gBattleAnimMove_Growl,
     },
@@ -2214,7 +2218,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestComboMoves = {0},
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = STAT_CHANGE_EFFECT_MINUS,
-            .speed = B_UPDATED_MOVE_DATA >= GEN_6 ? 2 : 1,
+            .speed = 2,
         }),
         .battleAnimScript = gBattleAnimMove_StringShot,
     },
@@ -6301,7 +6305,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestComboMoves = {0},
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = STAT_CHANGE_EFFECT_MINUS,
-            .evasion = (B_UPDATED_MOVE_DATA >= GEN_6) ? 2 : 1,
+            .evasion = 2,
         }),
         .battleAnimScript = gBattleAnimMove_SweetScent,
         .validApprenticeMove = TRUE,
