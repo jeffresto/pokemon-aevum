@@ -7000,7 +7000,9 @@ static void InitMovementNormal(struct ObjectEvent *objectEvent, struct Sprite *s
 
 static void StartRunningAnim(struct ObjectEvent *objectEvent, struct Sprite *sprite, enum Direction direction)
 {
-    InitNpcForMovement(objectEvent, sprite, direction, MOVE_SPEED_FAST_1);
+    // Aevum: B-button running is faster than normal on-foot movement
+    // while remaining slower than the Mach Bike.
+    InitNpcForMovement(objectEvent, sprite, direction, MOVE_SPEED_FAST_2);
     SetStepAnimHandleAlternation(objectEvent, sprite, GetRunningDirectionAnimNum(objectEvent->facingDirection));
 }
 

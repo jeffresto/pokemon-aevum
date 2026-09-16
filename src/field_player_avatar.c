@@ -901,7 +901,7 @@ static void PlayerNotOnBikeMoving(enum Direction direction, u16 heldKeys)
         }
         else
         {
-            // speed 2 is fast, same speed as running
+            // Surf uses the same speed as Aevum's normal movement.
             PlayerWalkFast(direction);
         }
         return;
@@ -932,7 +932,8 @@ static void PlayerNotOnBikeMoving(enum Direction direction, u16 heldKeys)
         if (ObjectMovingOnRockStairs(&gObjectEvents[gPlayerAvatar.objectEventId], direction))
             PlayerWalkSlowStairs(direction);
         else
-            PlayerWalkNormal(direction);
+            // Aevum: normal movement uses vanilla running speed.
+            PlayerWalkFast(direction);
     }
 }
 
