@@ -2,30 +2,30 @@
 #define GUARD_CONFIG_POKEMON_H
 
 // Species data settings
-#define P_UPDATED_TYPES             GEN_LATEST  // Some Pokémon have received type updates after their introduction.
-#define P_UPDATED_STATS             GEN_LATEST  // Some Pokémon have received base stat updates after their introduction.
-#define P_UPDATED_ABILITIES         GEN_LATEST  // Since Gen 4, certain Pokémon have had their abilities changed.
-#define P_UPDATED_EGG_GROUPS        GEN_LATEST  // Since Gen 8, certain Pokémon have gained new egg groups.
-#define P_UPDATED_FRIENDSHIP        GEN_LATEST  // Since Gen 8, the base friendship of certain Pokémon was changed.
-#define P_UPDATED_EVS               GEN_LATEST  // Since Gen 4, some Pokémon have received EV updates.
-#define P_UPDATED_EXP_YIELDS        GEN_LATEST  // Since Gen 5, some Pokémon have received base Experience changes.
+#define P_UPDATED_TYPES             GEN_4  // Some Pokémon have received type updates after their introduction.
+#define P_UPDATED_STATS             GEN_4  // Some Pokémon have received base stat updates after their introduction.
+#define P_UPDATED_ABILITIES         GEN_4  // Since Gen 4, certain Pokémon have had their abilities changed.
+#define P_UPDATED_EGG_GROUPS        GEN_4  // Since Gen 8, certain Pokémon have gained new egg groups.
+#define P_UPDATED_FRIENDSHIP        GEN_4  // Since Gen 8, the base friendship of certain Pokémon was changed.
+#define P_UPDATED_EVS               GEN_4  // Since Gen 4, some Pokémon have received EV updates.
+#define P_UPDATED_EXP_YIELDS        GEN_4  // Since Gen 5, some Pokémon have received base Experience changes.
 
 // Learnsets
-#define P_LVL_UP_LEARNSETS          GEN_LATEST  // Choose which set of Level Up Learnsets to use.
+#define P_LVL_UP_LEARNSETS          GEN_4  // Choose which set of Level Up Learnsets to use.
                                                 // For generations that hadn't introduced a species yet, we use their first appearence (eg. Chikorita's Gen2 data if the config is set to GEN_1).
                                                 // For generations that don't include a previously introduced species, we use their last apperance (eg. Snivy's Gen7 data if the config is set to GEN_8).
                                                 // GEN_1/2/3/4/5/6/7: Yellow, Crystal, RSE, HGSS, B2W2, ORAS, USUM learnsets respectively.
                                                 // GEN_8: Use the following priority: BDSP for Gen1-4 Pokémon, then LA for species introduced in that game, then SwSh for species present in those games. Otherwise, use GEN_7.
                                                 // GEN_9: SV For species present in those games. Otherwise use GEN_8.
-#define P_EVOLUTION_LEVEL_1_LEARN   GEN_LATEST  // Since Gen 8, Pokémon evolving while at level 1 do not get the chance to learn their level 1 moves, while before they did.
+#define P_EVOLUTION_LEVEL_1_LEARN   GEN_4  // Since Gen 8, Pokémon evolving while at level 1 do not get the chance to learn their level 1 moves, while before they did.
 
 // Evolution settings
-#define P_FRIENDSHIP_EVO_THRESHOLD   GEN_LATEST  // Since Gen 8, Pokémon that evolve by friendship evolve at or above 160 friendship instead of 220.
+#define P_FRIENDSHIP_EVO_THRESHOLD   GEN_4  // Since Gen 8, Pokémon that evolve by friendship evolve at or above 160 friendship instead of 220.
 
 // Breeding settings
 #define P_NIDORAN_M_DITTO_BREED        GEN_LATEST                // Since Gen 5, when Nidoran♂ breeds with Ditto it can produce Nidoran♀ offspring. Before, it would only yield male offspring. This change also applies to Volbeat.
 #define P_INCENSE_BREEDING             GEN_LATEST                // Since Gen 9, cross-generation Baby Pokémon don't require Incense being held by the parents to be obtained via breeding.
-#define P_EGG_HATCH_LEVEL              GEN_LATEST                // Since Gen 4, Pokémon will hatch from Eggs at level 1 instead of 5.
+#define P_EGG_HATCH_LEVEL              GEN_4                // Since Gen 4, Pokémon will hatch from Eggs at level 1 instead of 5.
 #define P_BALL_INHERITANCE             GEN_LATEST                // Since Gen 6, Eggs from the Day Care will inherit the Poké Ball from their mother. From Gen 7 onwards, the father can pass it down as well, as long as it's of the same species as the mother.
 #define P_MOVE_INHERITANCE             GEN_LATEST                // Prior to Gen 6, Eggs would inherit Egg moves from their father, TM moves from their father, level-up moves shared by both parents in that order. In Gen 6 and higher, Eggs would inherit level-up moves shared by both parents, Egg moves from their father, Egg moves from their mother in that order.
 #define P_NATURE_INHERITANCE           GEN_LATEST                // In Gen 3, Everstone grants Ditto and mothers a 50% chance to pass on Nature. Since Gen 4, anyone can pass on a Nature. Since Gen 5, the chance is 100%.
@@ -34,8 +34,8 @@
 #define P_SCATTERBUG_LINE_FORM_BREED   SPECIES_SCATTERBUG_FANCY  // Choose the Scatterbug form all Vivillon/Spewpa/Scatterbug will breed into, basically aligning with the "location" of the player's game.
 
 // Species-specific settings
-#define P_SHEDINJA_BALL             GEN_LATEST  // Since Gen 4, Shedinja requires a Poké Ball for its evolution. In Gen 3, Shedinja inherits Nincada's Ball.
-#define P_KADABRA_EVERSTONE         GEN_LATEST  // Since Gen 4, Kadabra can evolve even when holding an Everstone.
+#define P_SHEDINJA_BALL             GEN_4  // Since Gen 4, Shedinja requires a Poké Ball for its evolution. In Gen 3, Shedinja inherits Nincada's Ball.
+#define P_KADABRA_EVERSTONE         GEN_4  // Since Gen 4, Kadabra can evolve even when holding an Everstone.
 #define P_SHUCKLE_BERRY_JUICE       GEN_LATEST  // In Gen 2, Shuckle had a 1/16 chance of converting Berry that it's holding into Berry Juice. Enabling this will allow Shuckle to do this with an Oran Berry, which is the spiritual succesor of the Berry item.
 
 // Species graphic settings
@@ -53,7 +53,7 @@
 #define P_LEGENDARY_PERFECT_IVS          GEN_LATEST  // Since Gen 6, Legendaries, Mythicals and Ultra Beasts found in the wild or given through gifts have at least 3 perfect IVs.
 #define P_EV_CAP                         GEN_LATEST  // Since Gen 6, the max EVs per stat is 252 instead of 255.
 #define P_SHOW_TERA_TYPE                 GEN_8       // Since Gen 9, the Tera Type is shown on the summary screen.
-#define P_TM_LITERACY                    GEN_LATEST  // Since Gen 6, TM illiterate Pokémon can learn TMs that teach moves that are in their level-up learnsets.
+#define P_TM_LITERACY                    GEN_4  // Since Gen 6, TM illiterate Pokémon can learn TMs that teach moves that are in their level-up learnsets.
 #define P_CAN_FORGET_HIDDEN_MOVE         FALSE       // If TRUE, Pokémon can forget any move, even if it is an HM.
 #define P_ASK_MOVE_CONFIRMATION          FALSE       // If FALSE, when a player decides not to learn a move, the game does not ask the player for confirmation.
 #define P_EGG_CYCLE_LENGTH               GEN_LATEST  // Since Gen 8, Egg cycles take half as many steps as before. Previous generations have some varied step counts around 255.
