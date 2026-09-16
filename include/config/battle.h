@@ -53,7 +53,7 @@
 #define B_FIXED_DMG_IGNORES_TYPE    GEN_LATEST // In Gen1, fixed damage moves (Sonic Boom, Dragon Rage, Super Fang, Psywave, Seismic Toss, Night Shade, Bide, Counter) ignore type effectiveness and immunities.
 
 // Turn settings
-#define B_BINDING_TURNS             GEN_4 // In Gen5+, binding moves last for 4-5 turns instead of 2-5. If the user is holding a Grip Claw, they last for 7 turns instead of 5.
+#define B_BINDING_TURNS             GEN_5 // In Gen5+, binding moves last for 4-5 turns instead of 2-5. If the user is holding a Grip Claw, they last for 7 turns instead of 5.
 #define B_UPROAR_TURNS              GEN_4 // In Gen5+, Uproar lasts for 3 turns instead of 2-5.
 #define B_UPROAR_IGNORE_SOUNDPROOF  GEN_4 // In Gen5+, Uproar's effects ignore Soundproof.
 #define B_DISABLE_TURNS             GEN_4 // Disable's turns. See Cmd_disablelastusedattack.
