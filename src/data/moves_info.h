@@ -1355,13 +1355,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "For 2-5 turns, prevents foe\n"
         #endif
             "from using last used move."),
-    #if B_UPDATED_MOVE_DATA >= GEN_5
         .accuracy = 100,
-    #elif B_UPDATED_MOVE_DATA == GEN_4
-        .accuracy = 80,
-    #else
-        .accuracy = 55,
-    #endif
         .effect = EFFECT_DISABLE,
         .power = 0,
         .type = TYPE_NORMAL,

@@ -56,7 +56,7 @@
 #define B_BINDING_TURNS             GEN_5 // In Gen5+, binding moves last for 4-5 turns instead of 2-5. If the user is holding a Grip Claw, they last for 7 turns instead of 5.
 #define B_UPROAR_TURNS              GEN_4 // In Gen5+, Uproar lasts for 3 turns instead of 2-5.
 #define B_UPROAR_IGNORE_SOUNDPROOF  GEN_4 // In Gen5+, Uproar's effects ignore Soundproof.
-#define B_DISABLE_TURNS             GEN_4 // Disable's turns. See Cmd_disablelastusedattack.
+#define B_DISABLE_TURNS             GEN_5 // Disable's turns. See Cmd_disablelastusedattack.
 #define B_TAILWIND_TURNS            GEN_4 // In Gen5+, Tailwind lasts 4 turns instead of 3.
 #define B_SLEEP_TURNS               GEN_4 // In Gen5+, sleep prevents movement for 1-3 turns. In Gens3-4, it was 1-4 turns. In Gen2, it was 1-7 turns.
 #define B_TAUNT_TURNS               GEN_4 // In Gen5+, Taunt lasts 3 turns if the user acts before the target, or 4 turns if the target acted before the user. In Gen4, it lasted 2-4/3-5 turns. In Gen3, it lasted 2/3 turns.
