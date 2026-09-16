@@ -5897,8 +5897,24 @@ static void Cmd_setmist(void)
     }
     else
     {
-        gSideTimers[GetBattlerSide(gBattlerAttacker)].mistTimer = 5;
-        gSideStatuses[GetBattlerSide(gBattlerAttacker)] |= SIDE_STATUS_MIST;
+        enum BattleSide side = GetBattlerSide(gBattlerAttacker);
+
+        // Aevum: Mist immediately clears negative stat stages
+        // from all active allies before protecting them.
+        for (enum BattlerId battler = 0; battler < gBattlersCount; battler++)
+        {
+            if (GetBattlerSide(battler) != side || !IsBattlerAlive(battler))
+                continue;
+
+            for (enum Stat stat = STAT_ATK; stat < NUM_BATTLE_STATS; stat++)
+            {
+                if (gBattleMons[battler].statStages[stat] < DEFAULT_STAT_STAGE)
+                    gBattleMons[battler].statStages[stat] = DEFAULT_STAT_STAGE;
+            }
+        }
+
+        gSideTimers[side].mistTimer = 5;
+        gSideStatuses[side] |= SIDE_STATUS_MIST;
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_SET_MIST;
     }
     gBattlescriptCurrInstr = cmd->nextInstr;
@@ -6574,7 +6590,19 @@ static void Cmd_setvolatile(void)
 {
     CMD_ARGS(u8 battler, u8 _volatile, u8 value);
 
-    SetMonVolatile(GetBattlerForBattleScript(cmd->battler), cmd->_volatile, cmd->value);
+    enum BattlerId battler = GetBattlerForBattleScript(cmd->battler);
+
+    SetMonVolatile(battler, cmd->_volatile, cmd->value);
+
+    // Aevum: Foresight and Odor Sleuth reset positive Evasion
+    // while retaining the normal Foresight volatile effects.
+    if (cmd->_volatile == VOLATILE_FORESIGHT
+     && cmd->value
+     && gBattleMons[battler].statStages[STAT_EVASION] > DEFAULT_STAT_STAGE)
+    {
+        gBattleMons[battler].statStages[STAT_EVASION] = DEFAULT_STAT_STAGE;
+    }
+
     gBattlescriptCurrInstr = cmd->nextInstr;
 }
 

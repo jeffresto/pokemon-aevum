@@ -1460,8 +1460,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Mist"),
         .description = COMPOUND_STRING(
-            "Creates a mist that stops\n"
-            "lowering of allies' stats."),
+            "Clears allies' stat drops and\n"
+            "prevents further reductions."),
         .effect = EFFECT_MIST,
         .power = 0,
         .type = TYPE_ICE,
