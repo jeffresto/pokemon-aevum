@@ -162,6 +162,7 @@ gStdScripts_End::
 .include "data/maps/MeridianPowerSubstation/scripts.inc"
 .include "data/maps/StonegateQuarry/scripts.inc"
 .include "data/maps/MourningvaleGraveyard/scripts.inc"
+.include "data/maps/ArgentumIndustrialZone/scripts.inc"
 @ ===== POKEMON AEVUM MAP SCRIPTS END =====
 
 

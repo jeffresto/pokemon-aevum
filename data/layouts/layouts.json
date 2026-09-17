@@ -9675,6 +9675,17 @@
       "border_filepath": "data/layouts/MourningvaleGraveyard/border.bin",
       "blockdata_filepath": "data/layouts/MourningvaleGraveyard/map.bin",
       "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_ARGENTUM_INDUSTRIAL_ZONE",
+      "name": "ArgentumIndustrialZone_Layout",
+      "width": 41,
+      "height": 41,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BikeShop",
+      "border_filepath": "data/layouts/ArgentumIndustrialZone/border.bin",
+      "blockdata_filepath": "data/layouts/ArgentumIndustrialZone/map.bin",
+      "layout_version": "emerald"
     }
   ]
 }
