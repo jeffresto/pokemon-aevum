@@ -1072,7 +1072,7 @@
     },
     {
       "id": "MAPSEC_POKEMON_MANSION",
-      "name": "POKéMON MANSION",
+      "name": "POK\u00e9MON MANSION",
       "x": 4,
       "y": 14,
       "width": 1,
@@ -1088,7 +1088,7 @@
     },
     {
       "id": "MAPSEC_POKEMON_LEAGUE",
-      "name": "POKéMON LEAGUE",
+      "name": "POK\u00e9MON LEAGUE",
       "x": 2,
       "y": 3,
       "width": 1,
@@ -1112,7 +1112,7 @@
     },
     {
       "id": "MAPSEC_POKEMON_TOWER",
-      "name": "POKéMON TOWER",
+      "name": "POK\u00e9MON TOWER",
       "x": 18,
       "y": 6,
       "width": 1,
@@ -1630,6 +1630,122 @@
       "y": 4,
       "width": 1,
       "height": 1
+    },
+    {
+      "id": "MAPSEC_AEVUM_EVERSPRING_VILLAGE",
+      "name": "EVERSPRING VILLAGE"
+    },
+    {
+      "id": "MAPSEC_AEVUM_EVERSPRING_MEADOW",
+      "name": "EVERSPRING MEADOW"
+    },
+    {
+      "id": "MAPSEC_AEVUM_WINDMERE",
+      "name": "WINDMERE"
+    },
+    {
+      "id": "MAPSEC_AEVUM_WINDMERE_OUTSKIRTS",
+      "name": "WINDMERE OUTSKIRTS"
+    },
+    {
+      "id": "MAPSEC_AEVUM_WINDMERE_CAVE",
+      "name": "WINDMERE CAVE"
+    },
+    {
+      "id": "MAPSEC_AEVUM_WINDMERE_COAST",
+      "name": "WINDMERE COAST"
+    },
+    {
+      "id": "MAPSEC_AEVUM_BRAMBLEWOOD",
+      "name": "BRAMBLEWOOD"
+    },
+    {
+      "id": "MAPSEC_AEVUM_VERDANT_HOLLOW",
+      "name": "VERDANT HOLLOW"
+    },
+    {
+      "id": "MAPSEC_AEVUM_GREAT_FALLS",
+      "name": "GREAT FALLS"
+    },
+    {
+      "id": "MAPSEC_AEVUM_SILVERSTREAM",
+      "name": "SILVERSTREAM"
+    },
+    {
+      "id": "MAPSEC_AEVUM_MERIDIAN",
+      "name": "MERIDIAN"
+    },
+    {
+      "id": "MAPSEC_AEVUM_WESTERN_HIGHLANDS",
+      "name": "WESTERN HIGHLANDS"
+    },
+    {
+      "id": "MAPSEC_AEVUM_STONEGATE",
+      "name": "STONEGATE"
+    },
+    {
+      "id": "MAPSEC_AEVUM_MISTWOOD",
+      "name": "MISTWOOD"
+    },
+    {
+      "id": "MAPSEC_AEVUM_MOURNINGVALE",
+      "name": "MOURNINGVALE"
+    },
+    {
+      "id": "MAPSEC_AEVUM_GLACIER_PASS",
+      "name": "GLACIER PASS"
+    },
+    {
+      "id": "MAPSEC_AEVUM_FROSTPEAK",
+      "name": "FROSTPEAK"
+    },
+    {
+      "id": "MAPSEC_AEVUM_SHATTERED_CAPE",
+      "name": "SHATTERED CAPE"
+    },
+    {
+      "id": "MAPSEC_AEVUM_SUNSCORCH_DESERT",
+      "name": "SUNSCORCH DESERT"
+    },
+    {
+      "id": "MAPSEC_AEVUM_SOLHARA",
+      "name": "SOLHARA"
+    },
+    {
+      "id": "MAPSEC_AEVUM_OLD_KINGS_ROAD",
+      "name": "OLD KING'S ROAD"
+    },
+    {
+      "id": "MAPSEC_AEVUM_IRONWOOD",
+      "name": "IRONWOOD"
+    },
+    {
+      "id": "MAPSEC_AEVUM_ARGENTUM",
+      "name": "ARGENTUM"
+    },
+    {
+      "id": "MAPSEC_AEVUM_MOUNT_AEVUM",
+      "name": "MOUNT AEVUM"
+    },
+    {
+      "id": "MAPSEC_AEVUM_ANCIENT_BASIN",
+      "name": "ANCIENT BASIN"
+    },
+    {
+      "id": "MAPSEC_AEVUM_FORGOTTEN_CITY",
+      "name": "FORGOTTEN CITY"
+    },
+    {
+      "id": "MAPSEC_AEVUM_NORTHGATE",
+      "name": "NORTHGATE"
+    },
+    {
+      "id": "MAPSEC_AEVUM_VICTORY_ROAD_AEVUM",
+      "name": "VICTORY ROAD"
+    },
+    {
+      "id": "MAPSEC_AEVUM_CROWNSPIRE",
+      "name": "CROWNSPIRE"
     }
   ]
 }
