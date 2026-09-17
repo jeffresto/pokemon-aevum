@@ -163,6 +163,12 @@ gStdScripts_End::
 .include "data/maps/StonegateQuarry/scripts.inc"
 .include "data/maps/MourningvaleGraveyard/scripts.inc"
 .include "data/maps/ArgentumIndustrialZone/scripts.inc"
+.include "data/maps/GreatFallsHiddenCavern/scripts.inc"
+.include "data/maps/VerdantHollowArchive/scripts.inc"
+.include "data/maps/MeridianResearchFacility/scripts.inc"
+.include "data/maps/MourningvaleCovenantShrine/scripts.inc"
+.include "data/maps/SunscorchRuins/scripts.inc"
+.include "data/maps/VictoryRoadStarterSanctum/scripts.inc"
 @ ===== POKEMON AEVUM MAP SCRIPTS END =====
 
 
