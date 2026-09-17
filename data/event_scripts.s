@@ -169,6 +169,8 @@ gStdScripts_End::
 .include "data/maps/MourningvaleCovenantShrine/scripts.inc"
 .include "data/maps/SunscorchRuins/scripts.inc"
 .include "data/maps/VictoryRoadStarterSanctum/scripts.inc"
+.include "data/maps/BramblewoodMossGrove/scripts.inc"
+.include "data/maps/FrostpeakIceGrotto/scripts.inc"
 @ ===== POKEMON AEVUM MAP SCRIPTS END =====
 
 

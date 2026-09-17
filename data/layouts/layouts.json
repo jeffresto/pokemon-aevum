@@ -9752,6 +9752,28 @@
       "border_filepath": "data/layouts/VictoryRoadStarterSanctum/border.bin",
       "blockdata_filepath": "data/layouts/VictoryRoadStarterSanctum/map.bin",
       "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_BRAMBLEWOOD_MOSS_GROVE",
+      "name": "BramblewoodMossGrove_Layout",
+      "width": 48,
+      "height": 44,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/BramblewoodMossGrove/border.bin",
+      "blockdata_filepath": "data/layouts/BramblewoodMossGrove/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_FROSTPEAK_ICE_GROTTO",
+      "name": "FrostpeakIceGrotto_Layout",
+      "width": 42,
+      "height": 15,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/FrostpeakIceGrotto/border.bin",
+      "blockdata_filepath": "data/layouts/FrostpeakIceGrotto/map.bin",
+      "layout_version": "emerald"
     }
   ]
 }
