@@ -129,6 +129,42 @@ gStdScripts::
 	.4byte Std_ReceivedItem            @ STD_RECEIVED_ITEM
 gStdScripts_End::
 
+@ ===== POKEMON AEVUM MAP SCRIPTS BEGIN =====
+.include "data/maps/EverspringVillage/scripts.inc"
+.include "data/maps/EverspringMeadow/scripts.inc"
+.include "data/maps/Windmere/scripts.inc"
+.include "data/maps/WindmereOutskirts/scripts.inc"
+.include "data/maps/WindmereCave/scripts.inc"
+.include "data/maps/WindmereCoast/scripts.inc"
+.include "data/maps/Bramblewood/scripts.inc"
+.include "data/maps/VerdantHollow/scripts.inc"
+.include "data/maps/GreatFalls/scripts.inc"
+.include "data/maps/Silverstream/scripts.inc"
+.include "data/maps/Meridian/scripts.inc"
+.include "data/maps/WesternHighlands/scripts.inc"
+.include "data/maps/Stonegate/scripts.inc"
+.include "data/maps/Mistwood/scripts.inc"
+.include "data/maps/Mourningvale/scripts.inc"
+.include "data/maps/GlacierPass/scripts.inc"
+.include "data/maps/Frostpeak/scripts.inc"
+.include "data/maps/ShatteredCape/scripts.inc"
+.include "data/maps/SunscorchDesert/scripts.inc"
+.include "data/maps/Solhara/scripts.inc"
+.include "data/maps/OldKingsRoad/scripts.inc"
+.include "data/maps/Ironwood/scripts.inc"
+.include "data/maps/Argentum/scripts.inc"
+.include "data/maps/MountAevum/scripts.inc"
+.include "data/maps/AncientBasin/scripts.inc"
+.include "data/maps/ForgottenCity/scripts.inc"
+.include "data/maps/Northgate/scripts.inc"
+.include "data/maps/VictoryRoadAevum/scripts.inc"
+.include "data/maps/Crownspire/scripts.inc"
+.include "data/maps/MeridianPowerSubstation/scripts.inc"
+.include "data/maps/StonegateQuarry/scripts.inc"
+.include "data/maps/MourningvaleGraveyard/scripts.inc"
+@ ===== POKEMON AEVUM MAP SCRIPTS END =====
+
+
 
 	.include "data/maps/PetalburgCity/scripts.inc"
 	.include "data/maps/SlateportCity/scripts.inc"

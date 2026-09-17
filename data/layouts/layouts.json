@@ -9642,6 +9642,39 @@
       "border_filepath": "data/layouts/Crownspire/border.bin",
       "blockdata_filepath": "data/layouts/Crownspire/map.bin",
       "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_MERIDIAN_POWER_SUBSTATION",
+      "name": "MeridianPowerSubstation_Layout",
+      "width": 41,
+      "height": 41,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BikeShop",
+      "border_filepath": "data/layouts/MeridianPowerSubstation/border.bin",
+      "blockdata_filepath": "data/layouts/MeridianPowerSubstation/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_STONEGATE_QUARRY",
+      "name": "StonegateQuarry_Layout",
+      "width": 42,
+      "height": 15,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/StonegateQuarry/border.bin",
+      "blockdata_filepath": "data/layouts/StonegateQuarry/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_MOURNINGVALE_GRAVEYARD",
+      "name": "MourningvaleGraveyard_Layout",
+      "width": 48,
+      "height": 44,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/MourningvaleGraveyard/border.bin",
+      "blockdata_filepath": "data/layouts/MourningvaleGraveyard/map.bin",
+      "layout_version": "emerald"
     }
   ]
 }
