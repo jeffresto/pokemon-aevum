@@ -1783,3 +1783,9 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/scripts/battle_frontier.inc"
 	.include "data/scripts/apricorn_tree.inc"
 	.include "data/scripts/wild_encounter.inc"
+
+@ Aevum Everspring interiors - unconditional
+	.include "data/maps/EverspringPlayersHouse_1F/scripts.inc"
+	.include "data/maps/EverspringPlayersHouse_2F/scripts.inc"
+	.include "data/maps/EverspringZeroHouse/scripts.inc"
+	.include "data/maps/EverspringOakLab/scripts.inc"

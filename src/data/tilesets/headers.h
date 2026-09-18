@@ -1616,3 +1616,54 @@ const struct Tileset gTileset_AevumViridianForest =
 };
 
 /* AEVUM_KANTO_EARLY_HEADERS_END */
+
+/* AEVUM_KANTO_INTERIOR_HEADERS_BEGIN */
+
+const struct Tileset gTileset_AevumKantoBuilding =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AevumKantoBuilding,
+    .palettes = gTilesetPalettes_AevumKantoBuilding,
+    .metatiles = gMetatiles_AevumKantoBuilding,
+    .metatileAttributes = gMetatileAttributes_AevumKantoBuilding,
+    .callback = NULL,
+};
+
+
+const struct Tileset gTileset_AevumKantoHome1 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AevumKantoHome1,
+    .palettes = gTilesetPalettes_AevumKantoHome1,
+    .metatiles = gMetatiles_AevumKantoHome1,
+    .metatileAttributes = gMetatileAttributes_AevumKantoHome1,
+    .callback = NULL,
+};
+
+
+const struct Tileset gTileset_AevumKantoHome2 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AevumKantoHome2,
+    .palettes = gTilesetPalettes_AevumKantoHome2,
+    .metatiles = gMetatiles_AevumKantoHome2,
+    .metatileAttributes = gMetatileAttributes_AevumKantoHome2,
+    .callback = NULL,
+};
+
+
+const struct Tileset gTileset_AevumKantoLab =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AevumKantoLab,
+    .palettes = gTilesetPalettes_AevumKantoLab,
+    .metatiles = gMetatiles_AevumKantoLab,
+    .metatileAttributes = gMetatileAttributes_AevumKantoLab,
+    .callback = NULL,
+};
+
+/* AEVUM_KANTO_INTERIOR_HEADERS_END */

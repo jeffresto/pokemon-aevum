@@ -9788,6 +9788,58 @@
       "border_filepath": "data/layouts/FrostpeakIceGrotto/border.bin",
       "blockdata_filepath": "data/layouts/FrostpeakIceGrotto/map.bin",
       "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_EVERSPRING_PLAYERS_HOUSE_1F",
+      "name": "EverspringPlayersHouse_1F_Layout",
+      "width": 13,
+      "height": 10,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_AevumKantoBuilding",
+      "secondary_tileset": "gTileset_AevumKantoHome1",
+      "border_filepath": "data/layouts/EverspringPlayersHouse_1F/border.bin",
+      "blockdata_filepath": "data/layouts/EverspringPlayersHouse_1F/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_EVERSPRING_PLAYERS_HOUSE_2F",
+      "name": "EverspringPlayersHouse_2F_Layout",
+      "width": 12,
+      "height": 9,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_AevumKantoBuilding",
+      "secondary_tileset": "gTileset_AevumKantoHome1",
+      "border_filepath": "data/layouts/EverspringPlayersHouse_2F/border.bin",
+      "blockdata_filepath": "data/layouts/EverspringPlayersHouse_2F/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_EVERSPRING_ZERO_HOUSE",
+      "name": "EverspringZeroHouse_Layout",
+      "width": 13,
+      "height": 10,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_AevumKantoBuilding",
+      "secondary_tileset": "gTileset_AevumKantoHome2",
+      "border_filepath": "data/layouts/EverspringZeroHouse/border.bin",
+      "blockdata_filepath": "data/layouts/EverspringZeroHouse/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_EVERSPRING_OAK_LAB",
+      "name": "EverspringOakLab_Layout",
+      "width": 13,
+      "height": 14,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_AevumKantoBuilding",
+      "secondary_tileset": "gTileset_AevumKantoLab",
+      "border_filepath": "data/layouts/EverspringOakLab/border.bin",
+      "blockdata_filepath": "data/layouts/EverspringOakLab/map.bin",
+      "layout_version": "emerald"
     }
   ]
 }

@@ -467,3 +467,34 @@ const u16 gMetatileAttributes_AevumViridianForest[] =
     );
 
 /* AEVUM_KANTO_EARLY_METATILES_END */
+
+/* AEVUM_KANTO_INTERIOR_METATILES_BEGIN */
+
+const u16 gMetatiles_AevumKantoBuilding[] =
+    INCBIN_U16("data/tilesets/primary/aevum_kanto_building/metatiles.bin");
+
+const u16 gMetatileAttributes_AevumKantoBuilding[] =
+    INCBIN_U16("data/tilesets/primary/aevum_kanto_building/metatile_attributes.bin");
+
+
+const u16 gMetatiles_AevumKantoHome1[] =
+    INCBIN_U16("data/tilesets/secondary/aevum_kanto_home1/metatiles.bin");
+
+const u16 gMetatileAttributes_AevumKantoHome1[] =
+    INCBIN_U16("data/tilesets/secondary/aevum_kanto_home1/metatile_attributes.bin");
+
+
+const u16 gMetatiles_AevumKantoHome2[] =
+    INCBIN_U16("data/tilesets/secondary/aevum_kanto_home2/metatiles.bin");
+
+const u16 gMetatileAttributes_AevumKantoHome2[] =
+    INCBIN_U16("data/tilesets/secondary/aevum_kanto_home2/metatile_attributes.bin");
+
+
+const u16 gMetatiles_AevumKantoLab[] =
+    INCBIN_U16("data/tilesets/secondary/aevum_kanto_lab/metatiles.bin");
+
+const u16 gMetatileAttributes_AevumKantoLab[] =
+    INCBIN_U16("data/tilesets/secondary/aevum_kanto_lab/metatile_attributes.bin");
+
+/* AEVUM_KANTO_INTERIOR_METATILES_END */

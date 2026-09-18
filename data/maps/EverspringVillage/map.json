@@ -20,7 +20,29 @@
     }
   ],
   "object_events": [],
-  "warp_events": [],
+  "warp_events": [
+    {
+      "x": 6,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_EVERSPRING_PLAYERS_HOUSE_1F",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 15,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_EVERSPRING_ZERO_HOUSE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 16,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_EVERSPRING_OAK_LAB",
+      "dest_warp_id": "0"
+    }
+  ],
   "coord_events": [],
   "bg_events": [],
   "region": "REGION_HOENN"
