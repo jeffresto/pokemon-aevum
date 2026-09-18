@@ -420,3 +420,39 @@ const u16 gMetatiles_AevumPallet[] =
 const u16 gMetatileAttributes_AevumPallet[] =
     INCBIN_U16("data/tilesets/secondary/aevum_pallet/metatile_attributes.bin");
 /* AEVUM_KANTO_TILESET_METATILES_END */
+
+/* AEVUM_KANTO_EARLY_METATILES_BEGIN */
+
+const u16 gMetatiles_AevumKantoCave[] =
+    INCBIN_U16(
+        "data/tilesets/secondary/aevum_kanto_cave/metatiles.bin"
+    );
+
+const u16 gMetatileAttributes_AevumKantoCave[] =
+    INCBIN_U16(
+        "data/tilesets/secondary/aevum_kanto_cave/metatile_attributes.bin"
+    );
+
+
+const u16 gMetatiles_AevumViridianCity[] =
+    INCBIN_U16(
+        "data/tilesets/secondary/aevum_viridian_city/metatiles.bin"
+    );
+
+const u16 gMetatileAttributes_AevumViridianCity[] =
+    INCBIN_U16(
+        "data/tilesets/secondary/aevum_viridian_city/metatile_attributes.bin"
+    );
+
+
+const u16 gMetatiles_AevumViridianForest[] =
+    INCBIN_U16(
+        "data/tilesets/secondary/aevum_viridian_forest/metatiles.bin"
+    );
+
+const u16 gMetatileAttributes_AevumViridianForest[] =
+    INCBIN_U16(
+        "data/tilesets/secondary/aevum_viridian_forest/metatile_attributes.bin"
+    );
+
+/* AEVUM_KANTO_EARLY_METATILES_END */
