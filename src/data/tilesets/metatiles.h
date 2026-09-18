@@ -408,3 +408,15 @@ const u16 gMetatiles_HallOfFame[] = INCBIN_U16("data/tilesets/secondary/hall_of_
 const u16 gMetatileAttributes_HallOfFame[] = INCBIN_U16("data/tilesets/secondary/hall_of_fame_frlg/metatile_attributes.bin");
 
 #endif // IS_FRLG
+
+/* AEVUM_KANTO_TILESET_METATILES_BEGIN */
+const u16 gMetatiles_AevumKantoGeneral[] =
+    INCBIN_U16("data/tilesets/primary/aevum_kanto_general/metatiles.bin");
+const u16 gMetatileAttributes_AevumKantoGeneral[] =
+    INCBIN_U16("data/tilesets/primary/aevum_kanto_general/metatile_attributes.bin");
+
+const u16 gMetatiles_AevumPallet[] =
+    INCBIN_U16("data/tilesets/secondary/aevum_pallet/metatiles.bin");
+const u16 gMetatileAttributes_AevumPallet[] =
+    INCBIN_U16("data/tilesets/secondary/aevum_pallet/metatile_attributes.bin");
+/* AEVUM_KANTO_TILESET_METATILES_END */

@@ -1541,3 +1541,27 @@ const struct Tileset gTileset_HallOfFame =
 };
 
 #endif // IS_FRLG
+
+/* AEVUM_KANTO_TILESET_HEADERS_BEGIN */
+const struct Tileset gTileset_AevumKantoGeneral =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AevumKantoGeneral,
+    .palettes = gTilesetPalettes_AevumKantoGeneral,
+    .metatiles = gMetatiles_AevumKantoGeneral,
+    .metatileAttributes = gMetatileAttributes_AevumKantoGeneral,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_AevumPallet =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AevumPallet,
+    .palettes = gTilesetPalettes_AevumPallet,
+    .metatiles = gMetatiles_AevumPallet,
+    .metatileAttributes = gMetatileAttributes_AevumPallet,
+    .callback = NULL,
+};
+/* AEVUM_KANTO_TILESET_HEADERS_END */

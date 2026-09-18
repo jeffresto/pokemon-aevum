@@ -9333,8 +9333,15 @@
       "secondary_tileset": "gTileset_SaffronCity",
       "border_filepath": "data/layouts/EverspringVillage/border.bin",
       "blockdata_filepath": "data/layouts/EverspringVillage/map.bin",
+      "layout_version": "emerald",
+      "width": 24,
+      "height": 20,
+      "primary_tileset": "gTileset_AevumKantoGeneral",
+      "secondary_tileset": "gTileset_AevumPallet",
+      "border_width": 2,
+      "border_height": 2,
       "layout_version": "emerald"
-    },
+},
     {
       "id": "LAYOUT_EVERSPRING_MEADOW",
       "name": "EverspringMeadow_Layout",
