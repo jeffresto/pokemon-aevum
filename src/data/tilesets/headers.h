@@ -1580,6 +1580,18 @@ const struct Tileset gTileset_AevumKantoCave =
 };
 
 
+const struct Tileset gTileset_AevumPewterCity =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AevumPewterCity,
+    .palettes = gTilesetPalettes_AevumPewterCity,
+    .metatiles = gMetatiles_AevumPewterCity,
+    .metatileAttributes = gMetatileAttributes_AevumPewterCity,
+    .callback = NULL,
+};
+
+
 const struct Tileset gTileset_AevumViridianCity =
 {
     .isCompressed = TRUE,

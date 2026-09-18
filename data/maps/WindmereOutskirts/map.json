@@ -13,9 +13,49 @@
   "allow_running": true,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": null,
+  "connections": [
+    {
+      "map": "MAP_VERDANT_HOLLOW",
+      "offset": -12,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_WINDMERE",
+      "offset": -12,
+      "direction": "down"
+    }
+  ],
   "object_events": [],
-  "warp_events": [],
+  "warp_events": [
+    {
+      "x": 5,
+      "y": 13,
+      "elevation": 3,
+      "dest_map": "MAP_BRAMBLEWOOD",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 6,
+      "y": 13,
+      "elevation": 3,
+      "dest_map": "MAP_BRAMBLEWOOD",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 5,
+      "y": 51,
+      "elevation": 3,
+      "dest_map": "MAP_BRAMBLEWOOD",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 6,
+      "y": 51,
+      "elevation": 3,
+      "dest_map": "MAP_BRAMBLEWOOD",
+      "dest_warp_id": "0"
+    }
+  ],
   "coord_events": [],
   "bg_events": []
 }

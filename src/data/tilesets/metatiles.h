@@ -434,6 +434,17 @@ const u16 gMetatileAttributes_AevumKantoCave[] =
     );
 
 
+const u16 gMetatiles_AevumPewterCity[] =
+    INCBIN_U16(
+        "data/tilesets/secondary/aevum_pewter_city/metatiles.bin"
+    );
+
+const u16 gMetatileAttributes_AevumPewterCity[] =
+    INCBIN_U16(
+        "data/tilesets/secondary/aevum_pewter_city/metatile_attributes.bin"
+    );
+
+
 const u16 gMetatiles_AevumViridianCity[] =
     INCBIN_U16(
         "data/tilesets/secondary/aevum_viridian_city/metatiles.bin"

@@ -13,9 +13,52 @@
   "allow_running": true,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": null,
+  "connections": [],
   "object_events": [],
-  "warp_events": [],
+  "warp_events": [
+    {
+      "x": 29,
+      "y": 62,
+      "elevation": 3,
+      "dest_map": "MAP_WINDMERE_OUTSKIRTS",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 28,
+      "y": 62,
+      "elevation": 3,
+      "dest_map": "MAP_WINDMERE_OUTSKIRTS",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "elevation": 3,
+      "dest_map": "MAP_WINDMERE_OUTSKIRTS",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 6,
+      "y": 9,
+      "elevation": 3,
+      "dest_map": "MAP_WINDMERE_OUTSKIRTS",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 30,
+      "y": 62,
+      "elevation": 3,
+      "dest_map": "MAP_WINDMERE_OUTSKIRTS",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "elevation": 3,
+      "dest_map": "MAP_WINDMERE_OUTSKIRTS",
+      "dest_warp_id": "0"
+    }
+  ],
   "coord_events": [],
   "bg_events": []
 }

@@ -9327,21 +9327,16 @@
     {
       "id": "LAYOUT_EVERSPRING_VILLAGE",
       "name": "EverspringVillage_Layout",
-      "width": 30,
-      "height": 24,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_SaffronCity",
-      "border_filepath": "data/layouts/EverspringVillage/border.bin",
-      "blockdata_filepath": "data/layouts/EverspringVillage/map.bin",
-      "layout_version": "emerald",
       "width": 24,
       "height": 20,
       "primary_tileset": "gTileset_AevumKantoGeneral",
       "secondary_tileset": "gTileset_AevumPallet",
-      "border_width": 2,
+      "border_filepath": "data/layouts/EverspringVillage/border.bin",
+      "blockdata_filepath": "data/layouts/EverspringVillage/map.bin",
       "border_height": 2,
+      "border_width": 2,
       "layout_version": "emerald"
-},
+    },
     {
       "id": "LAYOUT_EVERSPRING_MEADOW",
       "name": "EverspringMeadow_Layout",
@@ -9421,14 +9416,16 @@
     {
       "id": "LAYOUT_VERDANT_HOLLOW",
       "name": "VerdantHollow_Layout",
-      "width": 20,
-      "height": 20,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "width": 48,
+      "height": 40,
+      "primary_tileset": "gTileset_AevumKantoGeneral",
+      "secondary_tileset": "gTileset_AevumPewterCity",
       "border_filepath": "data/layouts/VerdantHollow/border.bin",
       "blockdata_filepath": "data/layouts/VerdantHollow/map.bin",
-      "layout_version": "emerald"
-    },
+      "layout_version": "emerald",
+      "border_width": 2,
+      "border_height": 2
+},
     {
       "id": "LAYOUT_GREAT_FALLS",
       "name": "GreatFalls_Layout",
